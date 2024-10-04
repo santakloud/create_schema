@@ -1,0 +1,41 @@
+Teniendo en cuenta que la Estructura Básica de un Archivo YAML, esta compuesto por:
+Cabecera (opcional):
+Aunque no es obligatorio, algunos archivos YAML pueden comenzar con --- para indicar el inicio del documento y ... para el final.
+Claves y Valores:
+Los datos se representan en pares clave-valor. Las claves son únicas y los valores pueden ser de varios tipos (números, cadenas, listas, mapas, etc.).
+clave: valor
+
+Listas:
+Las listas se representan con guiones (-) y cada elemento de la lista se coloca en una nueva línea.
+lista:
+  - elemento1
+  - elemento2
+  - elemento3
+
+Mapas (Diccionarios):
+Los mapas se utilizan para agrupar pares clave-valor relacionados.
+mapa:
+  clave1: valor1
+  clave2: valor2
+
+Anidación:
+YAML permite la anidación de listas y mapas para representar estructuras de datos más complejas.
+anidado:
+  lista:
+    - elemento1
+    - elemento2
+  mapa:
+    clave1: valor1
+    clave2: valor2
+
+Parámetros Opcionales y Requeridos
+Requeridos:
+No hay una regla estricta en YAML sobre qué parámetros son requeridos u opcionales; esto depende del contexto en el que se utilice el archivo YAML. Por ejemplo, en un archivo de configuración, ciertos parámetros pueden ser obligatorios para que la aplicación funcione correctamente.
+Opcionales:
+Los parámetros opcionales son aquellos que no son estrictamente necesarios para el funcionamiento básico, pero pueden proporcionar configuraciones adicionales o personalizaciones.
+Comentarios
+Los comentarios en YAML se indican con el símbolo # y pueden colocarse en cualquier lugar del archivo.
+# Este es un comentario
+clave: valor  # Comentario al final de una línea
+
+Necesito que basandote en el esquema maestro de json http://json-schema.org/draft-07/schema#, generes código en python que mediante una template de YAML me genere un esquema de json, basado en los datos del fichero de yaml y siguiendo el esquema maestro.
